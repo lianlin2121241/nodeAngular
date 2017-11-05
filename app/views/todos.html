@@ -1,0 +1,27 @@
+<div>
+	<h3>Todos</h3>
+	<div class="row" style="margin-bottom:20px;">
+		<form ng-submit="addTodos()">
+			<div class="col-lg-12">
+				<div class="input-group">
+					<input type="text" class="form-control" ng-model="todo" placeholder="Add todos">
+					<span class="input-group-btn">
+						<button class="btn btn-primary" type="submit">Add</button>
+					</span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<ul class="list-group col-lg-12" ui-sortable ng-model="todoList" style="padding-left: 15px;">
+			<li class="list-group-item" ng-repeat="item in todoList track by $index">
+				<div class="input-group">
+					<span ng-bind="item" style="word-break: break-all;"></span>
+					<span class="input-group-btn">
+						<button class="btn btn-danger" type="button" ng-click="removeTodo($index)" style="padding: 0px 4px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;"><span class="glyphicon glyphicon-remove"></span></button>
+					</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
