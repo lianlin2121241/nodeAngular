@@ -12,4 +12,4 @@ Run `grunt` for building and `grunt serve` for preview.
 Running `grunt test` will run the unit tests with karma.
 
 ## 备注
-本项目根据yeoman的generator-angular模板构建的项目，项目中增加了todos练习应用
+本项目根据yeoman的generator-angular模板构建的项目，项目中增加了todos练习应用 
